@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importamos tailwind desde un CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fuentes y caracteres -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Importo AOS desde su CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Netflix Login Mnk</title>
+
+
+</head>
+<script src="js/myscript.js"></script>
+
+<style>
+    *{
+    font-family: roboto;
+    box-sizing: border-box;
+    margin: 0px;
+    top: 0px;
+    }
+</style>
+
+<body class=" flex flex-col  bg-[#000000] min-[740px]:bg-[url('./imagenes/fondoPortadasDePeliculasLoginES.jpg')] min-[740px]:items-center  ">
+    <img class="min-[280px]:h-[20px] min-[420px]:h-[45px] min-[600px]:h-[20px] min-[700px]:h-[45px] absolute top-[20px] left-[15px]" src="./imagenes/logo netflix2.png" alt="Logo">
+    <div class="w-full bg-gradient-to-b from-black/70 from-5% via-black/50 via-15%  flex flex-col items-center ">
+        <!-- Logo -->
+        
+        <!-- Inicia sesión -->
+            <section class=" min-[740px]:mt-[90px]  flex flex-col border-b border-[#737373] min-[740px]:bg-[black]/70 min-[740px]:border-none min-[740px]:w-[450px] min-[740px]:h-[670px] min-[740px]:mb-[90px] min-[740px]:mx-[20%] min-[900px]:items-center ">
+                <div class="flex flex-col  min-[280px]:mx-[5%] min-[280px]:mt-[100px] min-[600px]:mt-[65px] min-[700px]:mt-[100px] min-[740px]:mt-[55px] min-[280px]:mb-[30%] min-[280px]:mb-[60%] min-[740px]:px-[45px] ">    
+                    <h1 class="text-white text-[2rem] " >
+                        Inicia sesión
+                    </h1>
+                    <div class="flex flex-col gap-[40px] pt-[25px]">
+                        <div class="flex flex-col relative bg-[#333333] min-[320px]:w-[100%] min-[740px]:w-[320px] rounded">    
+                            <input class="bg-transparent peer relative z-20 outline-none text-white pl-[20px] pt-[25px] min-[320px]:h-[50px] min-[320px]:w-full" type="text">
+                            <!-- <div class="flex peer-focus:text-[0.6rem] relative top-[-35px] left-[20px] z-10"> -->
+                                <p class="text-[#8C8C8C]  text-[0.9rem] top-[15px] left-[20px]  flex absolute peer-focus:text-[0.7rem] peer-focus:top-[5px] ">Email o número de teléfono</p>
+                            <!-- </div> -->
+                            <div  class="flex absolute top-[55px] text-[0.8rem] pl-[3px]">
+                                <p class="hidden text-[#E87C03] ">Ingresa un email o un número de teléfono válido.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col relative bg-[#333333] min-[320px]:w-[100%] min-[740px]:w-[320px] rounded">    
+                            <input class="bg-transparent peer relative z-20 outline-none text-white pl-[20px] pt-[25px] min-[320px]:h-[50px] min-[320px]:w-full" type="text">
+                            
+                                <p class="text-[#8C8C8C] peer-focus:text-[0.7rem] peer-focus:top-[5px] top-[15px] left-[20px] text-[0.9rem] flex absolute ">Contraseña</p>
+                            
+                            <div  class="flex absolute top-[55px] text-[0.8rem] pl-[3px]">
+                                <p class="hidden text-[#E87C03] ">La contraseña debe tener entre 4 y 60 caracteres.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col pt-[60px]">
+                        <a href="" class="flex rounded justify-center items-center text-white min-[740px]:w-[320px] h-[50px] bg-[#E50914]">Iniciar sesión</a>
+                        <div class="flex justify-between pt-[10px]">
+                            <div class="flex gap-[5px]">
+                                <input class="" type="checkbox">
+                                <p class="text-[#B3B3B3] text-[0.83rem]">Recuérdame</p>
+                            </div>
+                                <a href="" class="text-[#B3B3B3] text-[0.83rem] hover:underline">¿Necesitas ayuda?</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pt-[10px] gap-[10px]">
+                        <p class="text-[#737373]">¿Primera vez en Netflix? <span class="text-white hover:underline"><a href="">Suscríbete ahora</a></span>.</p>
+                        <p class="text-[#8C8C8C] text-[0.83rem] leading-tight">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <span class="text-[#0071EB]"><a class="hover:underline" href="">Más info.</a></span></p>
+                    </div>
+                </div>
+                
+
+            </section>
+
+            <footer class="flex flex-col min-[280px]:px-[5%] min-[280px]:pt-[5%] min-[280px]:pb-[10%]   min-[740px]:pt-[0%] min-[740px]:pb-[0%] min-[740px]:w-full min-[740px]:bg-black/80 min-[740px]:px-[5%] min-[740px]:pt-[30px] min-[740px]:pb-[50px] min-[1120px]:items-center">
+                <div class="flex flex-col min-[1120px]:w-[1000px] gap-[30px]">
+                    <p class="text-[#737373]">¿Preguntas? Llama al <span><a class="hover:underline" href="">1 (408) 469-4467 (USA)</a></span></p>
+                    <div class="grid grid-cols-2 gap-[9%] min-[500px]:grid-cols-3 min-[500px]:gap-[5%] min-[740px]:grid-cols-4">
+                        <a href="" class="hover:underline text-[#737373] text-[0.8rem] pt-[5px]">Preguntas frecuentes</a>
+                        <a href="" class="hover:underline text-[#737373] text-[0.8rem] pt-[5px]">Centro de ayuda</a>
+                        <a href="" class="hover:underline text-[#737373] text-[0.8rem] pt-[5px]">Términos de uso</a>
+                        <a href="" class="hover:underline text-[#737373] text-[0.8rem] pt-[5px]">Privacidad</a>
+                        <a href="" class="hover:underline text-[#737373] text-[0.8rem] pt-[5px]">Preferencias de cookies</a>
+                        <a href="" class="hover:underline text-[#737373] text-[0.8rem] pt-[5px]">Información corporativa</a>
+                    </div>
+                    <!-- Selector Grande -->
+                    <div class="flex items-center pt-[20px]">
+                        <div class="flex items-center border border-[#5E5F61] h-[48px] w-[125px] bg-black">
+                            <select name="flex Lenguaje" class="text-[0.8rem] appearance-none bg-black relative pl-[52px] h-[32px] min-[280px]:w-[130px] text-white " >
+                                <option class="text-[#5C5C5C]" value="">Español</option>
+                                <option class="text-[#5C5C5C]" value="">English</option>
+                            </select>
+                        </div>
+                        <img class="h-[19px] w-[19px] relative left-[-110px]" src="./imagenes/caracterLenguajeRelleno.png" alt="">
+                        <span class="material-symbols-outlined relative text-[#5C5C5C] left-[-45px] top-[-5px] font-light">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </footer>
+    </div>
+        
+
+</body>
+
+</html>
